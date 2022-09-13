@@ -20,7 +20,7 @@ namespace Soti.Training.Batch2.Application
         }
 
         /// <summary>
-        /// 
+        /// Added sum of first and sec
         /// </summary>
         /// <returns> The added sum of first and second</returns>
 
