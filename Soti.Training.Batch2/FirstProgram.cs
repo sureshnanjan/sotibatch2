@@ -17,6 +17,7 @@ namespace Soti.Training.Batch2
         Func<int, int, int> myfclIntReturning = Add;
 
         delegate Pet PetDelegate();
+        
 
         event MyIntReturningDelegate myEvent;
         static void Main(string[] args)
@@ -28,6 +29,7 @@ namespace Soti.Training.Batch2
             var myObject = insInt.makeaObject<MyNumberFloat>();
             MyNumberFloat insFl = new MyNumberFloat(100.0f);
             Console.WriteLine(insFl);
+            Console.WriteLine("change by darwin");
             // Generic Code
             MyNumber<int,int> mynumInt = new MyNumber<int,int>(100); // Func<int,int, float>
            //Console.WriteLine($"{mynumInt} _ {mynumFloat} _{mynumDbl}");
