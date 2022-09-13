@@ -57,6 +57,7 @@ namespace Soti.Training.Batch2.Models
 
             //Change done by me
             Console.WriteLine("This is a statement added");
+            Console.WriteLine("Changes has been made");
         }
 
     }
