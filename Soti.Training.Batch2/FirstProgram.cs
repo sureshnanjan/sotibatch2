@@ -30,7 +30,9 @@ namespace Soti.Training.Batch2
             Console.WriteLine(insFl);
             // Generic Code
             MyNumber<int,int> mynumInt = new MyNumber<int,int>(100); // Func<int,int, float>
-           //Console.WriteLine($"{mynumInt} _ {mynumFloat} _{mynumDbl}");
+                                                                     //Console.WriteLine($"{mynumInt} _ {mynumFloat} _{mynumDbl}");
+            ArrList myobj = new ArrList();
+            myobj.list();
 
         }
 

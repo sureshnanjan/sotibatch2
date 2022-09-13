@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="AccessModifier.cs" />
     <Compile Include="AccessModifierInherited.cs" />
+    <Compile Include="ArrList.cs" />
     <Compile Include="Bike.cs" />
     <Compile Include="Car.cs" />
     <Compile Include="ClassFromOtherNameSpace.cs" />
