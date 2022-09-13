@@ -8,6 +8,7 @@ namespace Soti.Training.Batch2.Application
 {
     /// <summary>
     /// This is a class for Adding Entries
+    /// Adder
     /// </summary>
     public class Adder
     {
