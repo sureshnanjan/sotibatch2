@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Soti.Training.Batch2.Models
 {
-    class Category
+    public class Category
     {
+        int catid;
     }
 }
