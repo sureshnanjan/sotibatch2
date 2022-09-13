@@ -54,6 +54,9 @@ namespace Soti.Training.Batch2.Models
             {
                 throw new ArgumentException("This is not a valid argumen");
             }
+
+            //Change done by me
+            Console.WriteLine("This is a statement added");
         }
 
     }
