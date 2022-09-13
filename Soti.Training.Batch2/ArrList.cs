@@ -18,9 +18,16 @@ namespace Soti.Training.Batch2
             myAL.Add("Reuben");
             myAL.Add("Joseph");
             myAL.Add("Philip");
-            foreach (Object obj in myAL)
-                Console.Write("   {0}", obj);
-            Console.WriteLine();
+            string sent = string.Empty;
+            foreach (String var in myAL)
+            {
+                sent = sent + " " + var.ToString();
+            }
+            Console.WriteLine(sent.Trim());
+        }
+        public void ArrayList2()
+        {
+            ArrayList myAL = new ArrayList();
         }
     }
 }

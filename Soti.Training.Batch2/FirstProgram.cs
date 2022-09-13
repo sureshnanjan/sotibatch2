@@ -24,6 +24,7 @@ namespace Soti.Training.Batch2.EntryPoint
         {
             //InterfacesDemo1();
             // Non Generic Code
+            
             MyNumberInt insInt = new MyNumberInt(100);
             Console.WriteLine(insInt);
             var myObject = insInt.makeaObject<MyNumberFloat>();
@@ -34,6 +35,8 @@ namespace Soti.Training.Batch2.EntryPoint
                                                                        //Console.WriteLine($"{mynumInt} _ {mynumFloat} _{mynumDbl}");
             ArrList array = new ArrList();
             array.ArrayList1();
+            string[] arr = { "Reuben", "Joseph" };
+            Console.WriteLine(arr);
         }
 
         private static void InterfacesDemo1()

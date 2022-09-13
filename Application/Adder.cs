@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Soti.Training.Batch2.Application
 {
     /// <summary>
-    /// This is a class for Adding Entries
+    ///This is a class for Adding Entries
     /// </summary>
     public class Adder
     {
@@ -26,13 +26,13 @@ namespace Soti.Training.Batch2.Application
         /// </summary>
         /// <returns> The added sum of first and second</returns>
 
-        public int Add() {
-            // Bug IS FIXED
+        public int Add()
+        {
             return this.first + this.second + this.third; // The BUG  
         }
 
         [Obsolete("Dont Use this . Use the Add method instead of this")]
-        public int OldMethodToAdd(int a, int b) { return a +b; }
-        
+        public int OldMethodToAdd(int a, int b) { return a + b; }
+
     }
 }
