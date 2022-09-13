@@ -15,9 +15,11 @@ namespace Soti.Training.Batch2
             myAL.Add("Vadakkedam");
             myAL.Add("SOTI");
             myAL.AddRange(new ArrayList() { "range", "array" });
+            myAL.Remove("range");
             foreach (Object obj in myAL)
                 Console.Write("   {0}", obj);
             Console.WriteLine();
+
 
 
         }
