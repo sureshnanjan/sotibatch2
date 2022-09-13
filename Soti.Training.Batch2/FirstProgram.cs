@@ -5,8 +5,9 @@ using Soti.Training.Batch2.Operations;
 using System.Linq;
 using System.Collections.Generic;
 
-namespace Soti.Training.Batch2
+namespace Soti.Training.Batch2.EntryPoint
 {
+
     class FirstProgram // Pascal Case Classes
     {
         List<string> myString;
@@ -29,9 +30,10 @@ namespace Soti.Training.Batch2
             MyNumberFloat insFl = new MyNumberFloat(100.0f);
             Console.WriteLine(insFl);
             // Generic Code
-            MyNumber<int,int> mynumInt = new MyNumber<int,int>(100); // Func<int,int, float>
-           //Console.WriteLine($"{mynumInt} _ {mynumFloat} _{mynumDbl}");
-
+            MyNumber<int, int> mynumInt = new MyNumber<int, int>(100); // Func<int,int, float>
+                                                                       //Console.WriteLine($"{mynumInt} _ {mynumFloat} _{mynumDbl}");
+            ArrList array = new ArrList();
+            array.ArrayList1();
         }
 
         private static void InterfacesDemo1()
@@ -42,13 +44,13 @@ namespace Soti.Training.Batch2
             List<int> listNumbers = new List<int>(new int[] { 100, 1, 10, 11, 3, 2, 0, 23, 100 });
             string[] arrayStrings = { "Abch", "Bcde", "Zarc", "Fed", "Xerc" };
             SimpleClass[] arraySimpleClass = { new SimpleClass(1, 2),
-             new SimpleClass(7, 9),
-             new SimpleClass(11, 55),
-             new SimpleClass(13, 12),
-             new SimpleClass(20, 2),
-             new SimpleClass(10, 12),
+         new SimpleClass(7, 9),
+         new SimpleClass(11, 55),
+         new SimpleClass(13, 12),
+         new SimpleClass(20, 2),
+         new SimpleClass(10, 12),
 
-            };
+        };
 
             Console.WriteLine("The original Array");
             foreach (var item in arrayNumbers)
@@ -88,7 +90,9 @@ namespace Soti.Training.Batch2
 
 
 
-        private static void MyMethod() { Console.WriteLine("Inside Void and No params Method");
+        private static void MyMethod()
+        {
+            Console.WriteLine("Inside Void and No params Method");
             Pet myPet = new Pet();
             int num = 10;
             FirstProgram pgm = new FirstProgram();
@@ -96,7 +100,7 @@ namespace Soti.Training.Batch2
             pgm.myEvent(10, 10);
 
             pgm.myEvent += Add;
-                        
+
         }
 
         private static Pet DoSomeThingforPet() { return new Pet(); }
@@ -195,18 +199,19 @@ namespace Soti.Training.Batch2
         private static void SecondMethod() { Console.WriteLine("This is another Method"); }
 
 
-        private static void InvokeMethods(MyDelegate first, MyDelegate Second, MyIntReturningDelegate third) {
+        private static void InvokeMethods(MyDelegate first, MyDelegate Second, MyIntReturningDelegate third)
+        {
 
             first();
             Second();
-            third(10,20);
+            third(10, 20);
 
             //Action<MyDelegate, MyDelegate, MyIntReturningDelegate> myMethod = InvokeMethods;
 
             //Func<MyDelegate,MyDelegate,MyIntReturningDelegate>
 
-        
-        
+
+
         }
 
         private static void EventsDemo()
@@ -251,7 +256,8 @@ namespace Soti.Training.Batch2
             }
         }
 
-        static void ExceptionThrowingLogic(int param) {
+        static void ExceptionThrowingLogic(int param)
+        {
 
             if (param > 0)
             {
@@ -268,12 +274,13 @@ namespace Soti.Training.Batch2
             {
                 Console.WriteLine("Cannot Divide");
             }
-            
 
-        
+
+
         }
 
-        static void ExceptionHandled(int param) {
+        static void ExceptionHandled(int param)
+        {
             Console.WriteLine(param);
             BinaryReader br;
             try
@@ -319,7 +326,8 @@ namespace Soti.Training.Batch2
         }
 
 
-        static void FinallyDemo(int param) {
+        static void FinallyDemo(int param)
+        {
             try
             {
                 int result = 100 / param;
@@ -365,7 +373,8 @@ namespace Soti.Training.Batch2
             File.CreateText("sample.txt");
         }
 
-        public void addUsersToPetstore() {  // Camel Case startswithlowerVerb subsequest word ar capitliase
+        public void addUsersToPetstore()
+        {  // Camel Case startswithlowerVerb subsequest word ar capitliase
 
         }
 
@@ -374,7 +383,8 @@ namespace Soti.Training.Batch2
 
         }
 
-        public void variableTypes() {
+        public void variableTypes()
+        {
             // Primitive - Part of FCL
             // User Defined - USer have to to Define
 
@@ -398,7 +408,7 @@ namespace Soti.Training.Batch2
             Add(12.0f, 10);
             Add(second: 10, first: 12.0f);
             Add(mylistOfValues); // Take a Array Parameters
-            Add(1,2,3,4,5,6); // Optional Arguments one or more 
+            Add(1, 2, 3, 4, 5, 6); // Optional Arguments one or more 
             Add(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
             Add(1, 2);
 
@@ -409,7 +419,8 @@ namespace Soti.Training.Batch2
 
         }
 
-        static void CallingMethod() {
+        static void CallingMethod()
+        {
             int originalInt = 1111;
             string originalString = "ORIGINAL";
             Pet originalPet = new Pet();
@@ -431,13 +442,14 @@ namespace Soti.Training.Batch2
             int age;
             string name;
             float marks;
-           // Stocke Quote
+            // Stocke Quote
             //Console.WriteLine($"Age:{age} - Name : {name} - Marks: {marks}");
             InitilaizeManyThings(out age, out name, out marks);
             Console.WriteLine($"CAlling Method: Age:{age} - Name : {name} - Marks: {marks}");
         }
 
-        static void InitilaizeManyThings(out int age, out string name, out float marks) {
+        static void InitilaizeManyThings(out int age, out string name, out float marks)
+        {
             //Console.WriteLine($"Age:{age} - Name : {name} - Marks: {marks}");
             age = 35;
             name = "My User";
@@ -445,14 +457,16 @@ namespace Soti.Training.Batch2
             Console.WriteLine($"Called Method: Age:{age} - Name : {name} - Marks: {marks}");
 
         }
-        static void CalledMethod(ref int param) {
+        static void CalledMethod(ref int param)
+        {
             Console.WriteLine($"The original Passed Value {param}");
             //param = 8999;
             Console.WriteLine($"The Changed Value {param}");
 
         }
 
-        static void CalledMethod(ref string param) {
+        static void CalledMethod(ref string param)
+        {
             Console.WriteLine($"The original Passed Value {param}");
             param = "CHANGED IN CALLED METHOD";
             Console.WriteLine($"The Changed Value {param}");
@@ -466,7 +480,8 @@ namespace Soti.Training.Batch2
         }
 
 
-        public void WhichIsGreater(int first, int second) {
+        public void WhichIsGreater(int first, int second)
+        {
             // Check whether first if greater than second
             if ((first > second) && (first < second))
             {
@@ -474,7 +489,8 @@ namespace Soti.Training.Batch2
             }
         }
 
-        static void DisplayFileTypes(string location) {
+        static void DisplayFileTypes(string location)
+        {
             // File and The Directory Classes in System.IO
             // Read all files and directrioes in the location 
             // If its a file display 
@@ -508,11 +524,12 @@ namespace Soti.Training.Batch2
 
         }
 
-        static int Add(int first, int second) {
+        static int Add(int first, int second)
+        {
             Console.WriteLine(" Calling: Add (int first, int second) ");
             return first + second;
         } // Signature
-        static int Add(int first, int second, params int[]  others)
+        static int Add(int first, int second, params int[] others)
         {
             Console.WriteLine(" Calling: Add(int first, int second, params int[]  others) ");
             if (others.Length == 0)
@@ -528,11 +545,12 @@ namespace Soti.Training.Batch2
                 }
                 return result;
             }
-            
+
         }
 
 
-        static int Add(int[] parameters) {
+        static int Add(int[] parameters)
+        {
             int result = 0;
             foreach (var item in parameters)
             {
@@ -544,12 +562,13 @@ namespace Soti.Training.Batch2
         static float Add(int first, float second) { return first + second; }
 
         static float Add(float first, int second) { return first + second; }
-        static int Add(int first, int second, int third) { return first + second +third; }
+        static int Add(int first, int second, int third) { return first + second + third; }
 
         static float Add(float first, float second) { return first + second; }
 
 
-        static int Add2Integers(int first, int second) {
+        static int Add2Integers(int first, int second)
+        {
             return first + second;
         }
 
@@ -567,8 +586,8 @@ namespace Soti.Training.Batch2
         //Models
         // Essential Details about an Entity is captured
     }
-    
-    
+
+
     // Car Owner
     class CarforDriving
     {
@@ -643,6 +662,6 @@ namespace Soti.Training.Batch2
         solar
 
     }
-
-    
 }
+
+
