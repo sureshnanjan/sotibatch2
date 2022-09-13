@@ -33,7 +33,8 @@ namespace Soti.Training.Batch2
                                                                      //Console.WriteLine($"{mynumInt} _ {mynumFloat} _{mynumDbl}");
             ArrList myobj = new ArrList();
             myobj.list();
-
+            ArrList myobj1 = new ArrList();
+            myobj1.list2();
         }
 
         private static void InterfacesDemo1()
