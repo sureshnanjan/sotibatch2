@@ -19,7 +19,7 @@ namespace Soti.Training.Batch2.Models
         long mylong;
         public string status;
         public String PhotoUrls;
-        //Changes made in  the branch- inclusion of 2 new fields
+        //Changes made in  the branch- inclusion of 2 new fields 
 
         public string Name { get; set; }
 
