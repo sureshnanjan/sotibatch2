@@ -11,6 +11,5 @@ namespace Soti.Training.Batch2.Models
         Dog,
         Cat,
         Bunny
-
     }
 }
