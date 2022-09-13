@@ -13,10 +13,12 @@ namespace Soti.Training.Batch2.Application
     {
         int first;
         int second;
-        public Adder(int param1, int param2)
+        int third;
+        public Adder(int param1, int param2, int param3)
         {
             this.first = param1;
             this.second = param2;
+            this.third = param3;
         }
 
         /// <summary>
@@ -26,7 +28,7 @@ namespace Soti.Training.Batch2.Application
 
         public int Add() {
             // Bug IS FIXED
-            return this.first + this.second; // The BUG  
+            return this.first + this.second + this.third; // The BUG  
         }
 
         [Obsolete("Dont Use this . Use the Add method instead of this")]
