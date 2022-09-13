@@ -14,6 +14,7 @@ namespace Soti.Training.Batch2.Models
         int id; // Name of a Field enum struct
         string name = "Default";
         //string category_name;
+        //test comment on local thomas
         //int category_id;
         Category cat; // User Defined Type
         long mylong;
