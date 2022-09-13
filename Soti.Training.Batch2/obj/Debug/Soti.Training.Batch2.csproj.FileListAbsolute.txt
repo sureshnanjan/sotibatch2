@@ -1,0 +1,14 @@
+C:\Users\nanja\source\repos\Soti.Training.Batch2\Soti.Training.Batch2\bin\Debug\Soti.Training.Batch2.exe.config
+C:\Users\nanja\source\repos\Soti.Training.Batch2\Soti.Training.Batch2\bin\Debug\Soti.Training.Batch2.exe
+C:\Users\nanja\source\repos\Soti.Training.Batch2\Soti.Training.Batch2\bin\Debug\Soti.Training.Batch2.pdb
+C:\Users\nanja\source\repos\Soti.Training.Batch2\Soti.Training.Batch2\obj\Debug\Soti.Training.Batch2.csproj.CoreCompileInputs.cache
+C:\Users\nanja\source\repos\Soti.Training.Batch2\Soti.Training.Batch2\obj\Debug\Soti.Training.Batch2.exe
+C:\Users\nanja\source\repos\Soti.Training.Batch2\Soti.Training.Batch2\obj\Debug\Soti.Training.Batch2.pdb
+C:\Users\nanja\source\repos\Soti.Training.Batch2\Soti.Training.Batch2\bin\Debug\Soti.Training.Batch2.Models.dll
+C:\Users\nanja\source\repos\Soti.Training.Batch2\Soti.Training.Batch2\bin\Debug\Soti.Training.Batch2.Operations.dll
+C:\Users\nanja\source\repos\Soti.Training.Batch2\Soti.Training.Batch2\bin\Debug\Soti.Training.Batch2.Models.pdb
+C:\Users\nanja\source\repos\Soti.Training.Batch2\Soti.Training.Batch2\bin\Debug\Soti.Training.Batch2.Operations.pdb
+C:\Users\nanja\source\repos\Soti.Training.Batch2\Soti.Training.Batch2\obj\Debug\Soti.Training.Batch2.csproj.AssemblyReference.cache
+C:\Users\nanja\source\repos\Soti.Training.Batch2\Soti.Training.Batch2\obj\Debug\Soti.Training.Batch2.csproj.CopyComplete
+C:\Users\nanja\source\repos\Soti.Training.Batch2\Soti.Training.Batch2\bin\Debug\Soti.Training.Batch2.Operations.xml
+C:\Users\nanja\source\repos\Soti.Training.Batch2\Soti.Training.Batch2\bin\Debug\Soti.Training.Batch2.Operations.dll.config
