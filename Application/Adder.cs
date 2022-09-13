@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Soti.Training.Batch2.Application
-{
+{    ///Adder Operation
     /// <summary>
     /// This is a class for Adding Entries
     /// Adder
