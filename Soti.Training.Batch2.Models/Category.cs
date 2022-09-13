@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Soti.Training.Batch2.Models
 {
-    class Category
+    public enum Category
     {
+        Dog,
+        Cat,
+        Bunny
+
     }
 }
