@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Soti.Training.Batch2.Application
 {
     /// <summary>
-    /// 
+    ///  This is for GIT DEmo
     /// </summary>
     public static class BinarySearcher
     {
