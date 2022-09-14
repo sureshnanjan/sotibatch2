@@ -4,6 +4,7 @@ using Soti.Training.Batch2.Models;
 using Soti.Training.Batch2.Operations;
 using System.Linq;
 using System.Collections.Generic;
+using System.Collections;
 
 namespace Soti.Training.Batch2
 {
@@ -20,7 +21,7 @@ namespace Soti.Training.Batch2
 
         event MyIntReturningDelegate myEvent;
         static void Main(string[] args)
-        {
+        { 
             //InterfacesDemo1();
             // Non Generic Code
             MyNumberInt insInt = new MyNumberInt(100);
@@ -30,9 +31,12 @@ namespace Soti.Training.Batch2
             Console.WriteLine(insFl);
             // Generic Code
             MyNumber<int,int> mynumInt = new MyNumber<int,int>(100); // Func<int,int, float>
-           //Console.WriteLine($"{mynumInt} _ {mynumFloat} _{mynumDbl}");
+                                                                     //Console.WriteLine($"{mynumInt} _ {mynumFloat} _{mynumDbl}");
+                                                                     // Creates and initializes a new ArrayList.
+           
 
         }
+       
 
         private static void InterfacesDemo1()
         {

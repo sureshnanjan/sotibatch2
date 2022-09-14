@@ -47,9 +47,14 @@ namespace Soti.Training.Batch2.Operations
         }
 
         public void CreatePet(Pet args) {
+            System.Diagnostics.Stopwatch timer = new System.Diagnostics.Stopwatch();
+            timer.Start();
             // Json Body 
             // Send The request to the Server API End Point https://petstore.swagger.io/v2/swagger.json 
             // HTTPClient 
+            long duration = timer.ElapsedMilliseconds;
+            timer.Stop();
+            Console.WriteLine($"The Operation took {duration} milliseconds");
         }
 
         // Indexers
