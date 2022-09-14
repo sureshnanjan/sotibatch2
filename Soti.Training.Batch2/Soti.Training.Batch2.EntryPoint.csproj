@@ -54,6 +54,7 @@
     <Compile Include="MyNumber.cs" />
     <Compile Include="MyNumberInt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="queue.cs" />
     <Compile Include="SimpleClass.cs" />
     <Compile Include="SOTIExtensions.cs" />
     <Compile Include="Stacking.cs" />

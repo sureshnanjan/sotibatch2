@@ -12,10 +12,15 @@ namespace Soti.Training.Batch2
         {
 
 
-            Stacking myStack = new Stacking();
-        //    myStack.Push("Hello");
-         //   myStack.Push("World");
-         //   myStack.Push("!");
+            Stack myStack = new Stack();
+            myStack.Push("Hello");
+            myStack.Push("World");
+            myStack.Push("dennis");
+            foreach(var ele in myStack)
+            {
+                Console.WriteLine(ele);
+            }
+
         }
 
     }

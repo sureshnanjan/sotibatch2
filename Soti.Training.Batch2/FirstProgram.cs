@@ -34,9 +34,13 @@ namespace Soti.Training.Batch2
                                                                      //ArrList myobj = new ArrList();
                                                                      //myobj.list();
                                                                      //ArrList myobj1 = new ArrList();
-                                                                     //myobj1.list2();
-            Hash hash1 = new Hash();
-            hash1.hashlist();
+                                                                     //                                                         //myobj1.list2();
+                                                                     //Hash hash1 = new Hash();
+                                                                     //hash1.hashlist();
+            Stacking mystack1 = new Stacking();
+            mystack1.stack1();
+            queue myqueue1 = new queue();
+            myqueue1.queue1();
         }
 
         private static void InterfacesDemo1()
