@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 namespace Soti.Training.Batch2.Models
 {
     /// <summary>
-    /// This is the Type for represting pets in the Petstore,
-    /// adding this comment for git demo
+    /// This is the Type for represting pets in the Petstore
     /// </summary>
     public class Pet // This Name of the Clss
     {
