@@ -48,7 +48,8 @@ namespace Soti.Training.Batch2
             Console.WriteLine("myReadOnlyAL is {0}.", myReadOnlyAL.IsReadOnly ? "read-only" : "writable");
             foreach (int myInt in myReadOnlyAL)
                 Console.WriteLine("   {0}", myInt);
-            myReadOnlyAL.Add(1);
+           // myReadOnlyAL.Add(1);
+
 
         }
 

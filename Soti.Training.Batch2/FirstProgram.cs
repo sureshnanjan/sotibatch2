@@ -31,10 +31,12 @@ namespace Soti.Training.Batch2
             // Generic Code
             MyNumber<int,int> mynumInt = new MyNumber<int,int>(100); // Func<int,int, float>
                                                                      //Console.WriteLine($"{mynumInt} _ {mynumFloat} _{mynumDbl}");
-            ArrList myobj = new ArrList();
-            myobj.list();
-            ArrList myobj1 = new ArrList();
-            myobj1.list2();
+                                                                     //ArrList myobj = new ArrList();
+                                                                     //myobj.list();
+                                                                     //ArrList myobj1 = new ArrList();
+                                                                     //myobj1.list2();
+            Hash hash1 = new Hash();
+            hash1.hashlist();
         }
 
         private static void InterfacesDemo1()
