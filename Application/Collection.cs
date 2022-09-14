@@ -59,7 +59,7 @@ namespace Application
 
 
     }
-
+     
 
     public class StackCollection
     {
