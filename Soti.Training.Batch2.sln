@@ -21,11 +21,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soti.Training.Batch2.Operat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sotibatch2.SystemCollectionsTests", "sotibatch2.SystemCollectionsTests\sotibatch2.SystemCollectionsTests.csproj", "{01475BA6-DA04-42F4-AA3F-7256FCD71B4C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F9193FC5-5B15-47CD-A017-5FE87EBAF001}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\Documents\System Collections.docx = ..\..\..\Documents\System Collections.docx
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
