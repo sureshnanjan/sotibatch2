@@ -50,6 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdderTests.cs" />
+    <Compile Include="LearningCollectionsTests.cs" />
+    <Compile Include="LearningGenericCollectionsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimpleClass.cs" />
     <Compile Include="SubtracterTests.cs" />

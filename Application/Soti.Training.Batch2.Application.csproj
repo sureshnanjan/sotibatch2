@@ -43,8 +43,13 @@
   <ItemGroup>
     <Compile Include="Adder.cs" />
     <Compile Include="BinarySearcher.cs" />
+    <Compile Include="LearningCollections.cs" />
+    <Compile Include="LearningGenericCollections.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Subtracter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CollectionsComparison.pdf" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

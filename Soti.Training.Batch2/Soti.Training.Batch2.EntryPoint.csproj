@@ -61,6 +61,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Application\Soti.Training.Batch2.Application.csproj">
+      <Project>{cfdd5bfd-b9bc-43ef-9e0c-87a381aae66e}</Project>
+      <Name>Soti.Training.Batch2.Application</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Soti.Training.Batch2.Models\Soti.Training.Batch2.Models.csproj">
       <Project>{b5c347be-8087-45e2-b7ee-189a26ffff7a}</Project>
       <Name>Soti.Training.Batch2.Models</Name>
