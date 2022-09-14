@@ -113,7 +113,7 @@ namespace CollectionsTests
                 numbers.Enqueue("three");
                 numbers.Enqueue("four");
                 numbers.Enqueue("five");
-
+                numbers.Enqueue("six");
                 numbers.Dequeue();
 
 
@@ -123,6 +123,7 @@ namespace CollectionsTests
                 numbersResult.Enqueue("three");
                 numbersResult.Enqueue("four");
                 numbersResult.Enqueue("five");
+                numbersResult.Enqueue("six");
                 CollectionAssert.AreEqual(numbers, numbersResult);
 
             }
