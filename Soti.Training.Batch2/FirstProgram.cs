@@ -4,6 +4,7 @@ using Soti.Training.Batch2.Models;
 using Soti.Training.Batch2.Operations;
 using System.Linq;
 using System.Collections.Generic;
+using System.Collections;
 
 namespace Soti.Training.Batch2
 {
@@ -22,6 +23,176 @@ namespace Soti.Training.Batch2
         event MyIntReturningDelegate myEvent;
         static void Main(string[] args)
         {
+            //collection implemmentations
+            //araylist
+            Console.WriteLine("collection \n");
+            Console.WriteLine("arraylist");
+
+            ArrayList array = new ArrayList();
+            array.Add(1);
+            array.Add(2);
+            array.Add(3);
+
+            foreach (var item in array) { Console.WriteLine(item); }
+            Console.WriteLine("removing 2");
+            array.Remove(2);
+            foreach (var item in array) { Console.WriteLine(item); }
+
+            //queue
+            Console.WriteLine("queue");
+            Queue array1 = new Queue();
+            array1.Enqueue(1);
+            array1.Enqueue(2);
+            array1.Enqueue(3);
+            array1.Enqueue(4);
+
+            foreach (var item in array1) { Console.WriteLine(item); }
+
+            array1.Dequeue();
+            Console.WriteLine("deque operation");
+
+            foreach (var item in array1) { Console.WriteLine(item); }
+
+
+            //stack
+            Console.WriteLine("stack");
+            Stack array2 = new Stack();
+
+            array2.Push(90);
+            array2.Push(40);
+            array2.Push(10);
+
+            foreach (var item in array2) { Console.WriteLine(item); }
+            array2.Pop();
+            Console.WriteLine("pop operation");
+
+            foreach (var item in array2) { Console.WriteLine(item); }
+
+
+
+
+            //generic collections
+            //list implementation
+
+
+
+            Console.WriteLine("generic collection\n");
+            Console.WriteLine("list");
+            // Create a list of parts.
+            List<Part> parts = new List<Part>();
+
+            // Add parts to the list.
+            parts.Add(new Part() { PartName = "crank arm", PartId = 1234 });
+            parts.Add(new Part() { PartName = "chain ring", PartId = 1334 });
+            parts.Add(new Part() { PartName = "regular seat", PartId = 1434 });
+            parts.Add(new Part() { PartName = "banana seat", PartId = 1444 });
+            parts.Add(new Part() { PartName = "cassette", PartId = 1534 });
+            parts.Add(new Part() { PartName = "shift lever", PartId = 1634 });
+
+
+
+            // Write out the parts in the list. This will call the overridden ToString method
+            // in the Part class.
+            Console.WriteLine();
+            foreach (Part aPart in parts)
+            {
+                Console.WriteLine(aPart);
+            }
+
+
+            // This will remove part 1534 even though the PartName is different,
+            // because the Equals method only checks PartId for equality.
+            
+            parts.Remove(new Part() { PartId = 1534, PartName = "cogs" });
+            Console.WriteLine("removing part 1534 even though the PartName is different ");
+            foreach (Part aPart in parts)
+            {
+                Console.WriteLine(aPart);
+            }
+
+
+
+
+            //queue
+            Console.WriteLine();
+            Console.WriteLine("queue");
+            Console.WriteLine();
+
+
+            Queue<string> numbers = new Queue<string>();
+            numbers.Enqueue("one");
+            numbers.Enqueue("two");
+            numbers.Enqueue("three");
+            numbers.Enqueue("four");
+            numbers.Enqueue("five");
+
+            foreach (string number in numbers)
+            {
+                Console.WriteLine(number);
+            }
+
+            //deque from the queue
+
+            Console.WriteLine("deque from the queue");
+            numbers.Dequeue();
+            foreach (string number in numbers)
+            {
+                Console.WriteLine(number);
+            }
+
+
+            //stack
+            Console.WriteLine();
+            Console.WriteLine("stack");
+            Console.WriteLine();
+            Stack<string> numbersStack = new Stack<string>();
+            numbersStack.Push("one");
+            numbersStack.Push("two");
+            numbersStack.Push("three");
+            numbersStack.Push("four");
+            numbersStack.Push("five");
+
+            // A stack can be enumerated without disturbing its contents.
+            foreach (string numbera in numbersStack)
+            {
+                Console.WriteLine(numbera);
+            }
+
+            //poping from the stack
+            Console.WriteLine("poping from the stack");
+            
+            numbersStack.Pop();
+
+
+            foreach (string numbera in numbersStack)
+            {
+                Console.WriteLine(numbera);
+            }
+            Console.WriteLine();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             //InterfacesDemo1();
             // Non Generic Code
             MyNumberInt insInt = new MyNumberInt(100);
@@ -38,6 +209,27 @@ namespace Soti.Training.Batch2
 
         private static void InterfacesDemo1()
         {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             //InterfacesDemo();
             int[] arrayNumbers = { 100, 1, 10, 11, 3, 2, 0, 23, 100 };
             int[] arrayKeys = { 1, 4, 2, 3, 5, 9, 6, 7, 8 };
