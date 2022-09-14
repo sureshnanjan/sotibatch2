@@ -19,7 +19,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soti.Training.Batch2.Operat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soti.Training.Batch2.OperationsAcceptanceTests", "Soti.Training.Batch2.OperationsAcceptanceTests\Soti.Training.Batch2.OperationsAcceptanceTests.csproj", "{27A8ED43-8813-411F-950B-DE59E56201BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soti.Training.Batch2.CollectionTests", "Soti.Training.Batch2.CollectionTests\Soti.Training.Batch2.CollectionTests.csproj", "{82E75AA7-A848-4BB4-8D31-6139402074FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soti.Training.Batch2.CollectionTests", "Soti.Training.Batch2.CollectionTests\Soti.Training.Batch2.CollectionTests.csproj", "{82E75AA7-A848-4BB4-8D31-6139402074FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soti.Training.Batch2.Collections", "Soti.Training.Batch2.Collections\Soti.Training.Batch2.Collections.csproj", "{150E5E01-B3DD-440A-81B6-58E00A4082CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{82E75AA7-A848-4BB4-8D31-6139402074FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82E75AA7-A848-4BB4-8D31-6139402074FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82E75AA7-A848-4BB4-8D31-6139402074FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{150E5E01-B3DD-440A-81B6-58E00A4082CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{150E5E01-B3DD-440A-81B6-58E00A4082CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{150E5E01-B3DD-440A-81B6-58E00A4082CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{150E5E01-B3DD-440A-81B6-58E00A4082CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
