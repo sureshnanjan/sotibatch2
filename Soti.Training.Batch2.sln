@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32407.337
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soti.Training.Batch2.EntryPoint", "Soti.Training.Batch2\Soti.Training.Batch2.EntryPoint.csproj", "{4A0E86B9-6640-4BFB-A1DC-B40E8B852357}"
 EndProject
@@ -13,11 +13,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soti.Training.Batch2.Applic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soti.Training.Batch2.ApplicationTests", "Soti.Training.Batch2.ApplicationTests\Soti.Training.Batch2.ApplicationTests.csproj", "{2FB84F56-7804-4931-A017-DA3E5D3FC591}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soti.Training.Batch2.UserAcceptanceTests", "AcceptanceTestCases\Soti.Training.Batch2.UserAcceptanceTests.csproj", "{3F215DC9-B707-47D6-AE3D-60459AF075F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soti.Training.Batch2.UserAcceptanceTests", "AcceptanceTestCases\Soti.Training.Batch2.UserAcceptanceTests.csproj", "{3F215DC9-B707-47D6-AE3D-60459AF075F9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soti.Training.Batch2.OperationsTests", "Soti.Training.Batch2.OperationsTests\Soti.Training.Batch2.OperationsTests.csproj", "{86AE217C-7B93-4116-AD28-4193DDAC1BD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soti.Training.Batch2.OperationsAcceptanceTests", "Soti.Training.Batch2.OperationsAcceptanceTests\Soti.Training.Batch2.OperationsAcceptanceTests.csproj", "{27A8ED43-8813-411F-950B-DE59E56201BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soti.Training.Batch2.OperationsAcceptanceTests", "Soti.Training.Batch2.OperationsAcceptanceTests\Soti.Training.Batch2.OperationsAcceptanceTests.csproj", "{27A8ED43-8813-411F-950B-DE59E56201BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections", "Collections\Collections.csproj", "{E77705D9-FE75-46F5-A08A-646D6313F7A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{27A8ED43-8813-411F-950B-DE59E56201BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27A8ED43-8813-411F-950B-DE59E56201BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27A8ED43-8813-411F-950B-DE59E56201BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E77705D9-FE75-46F5-A08A-646D6313F7A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E77705D9-FE75-46F5-A08A-646D6313F7A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E77705D9-FE75-46F5-A08A-646D6313F7A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E77705D9-FE75-46F5-A08A-646D6313F7A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
