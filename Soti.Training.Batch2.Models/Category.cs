@@ -8,5 +8,8 @@ namespace Soti.Training.Batch2.Models
 {
     class Category
     {
+        Dog,
+        Cat,
+        Bunny
     }
 }

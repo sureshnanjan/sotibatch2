@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 namespace Soti.Training.Batch2.Models
 {
     public enum MyEnum
+
     {
        monday,
        tuesday,
        saturday
     }
-
+    //Trying out the branching
     public struct MyStruct
     {
         string name;
