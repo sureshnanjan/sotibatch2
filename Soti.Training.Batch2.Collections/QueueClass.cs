@@ -12,6 +12,14 @@ namespace Soti.Training.Batch2.Collections
         {
             Queue myQ = new Queue();
             myQ.Enqueue("reuben");
+            myQ.Enqueue("joseph");
+            myQ.Enqueue("philip");
+            foreach (var item in myQ)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine(myQ.Peek().ToString());
+
         }
     }
 }

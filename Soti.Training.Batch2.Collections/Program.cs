@@ -23,7 +23,8 @@ namespace Soti.Training.Batch2.Collections
             Console.WriteLine(sq1.getArea());
             Console.WriteLine(sq2.getArea());
             Console.WriteLine(sq3.getArea());
-
+            QueueClass myQ = new QueueClass();
+            myQ.Queue1();
         }
     }
 }
