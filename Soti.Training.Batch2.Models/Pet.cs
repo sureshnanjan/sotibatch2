@@ -24,7 +24,6 @@ namespace Soti.Training.Batch2.Models
         {
             this.Name = "DEFAULT";
         }
-
         /// <summary>
         /// 
         /// </summary>

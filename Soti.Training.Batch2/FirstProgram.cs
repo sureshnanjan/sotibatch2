@@ -17,10 +17,36 @@ namespace Soti.Training.Batch2
         Func<int, int, int> myfclIntReturning = Add;
 
         delegate Pet PetDelegate();
-
+        
         event MyIntReturningDelegate myEvent;
         static void Main(string[] args)
         {
+
+            OClass obj1 = new OClass();
+            OClass obj2 = new OClass();
+            OClass Added = obj1 + obj2;
+            OClass Subtracted = obj1 - obj2;
+            OClass Multiplied = obj1 * obj2;
+
+            Console.WriteLine($"Adding{obj1} and {obj2} gives me {Added} ");
+
+            obj1 = new OClass("Value1",1);
+            obj2 = new OClass("Value2",2);
+            Added = obj1 + obj2;
+            Subtracted = obj1 - obj2;
+            Multiplied = obj1 * obj2;
+            Console.WriteLine($"Adding {obj1} and {obj2} gives me {Added} ");
+            Console.WriteLine($"Subtracting {obj1} and {obj2} gives me {Subtracted} ");
+            Console.WriteLine($"Multiplying {obj1} and {obj2} gives me {Multiplied} ");
+
+            string name = "Noel";
+
+            Console.WriteLine(name[2]);
+            Console.WriteLine(obj1[0]);
+            Console.WriteLine(obj1[1]);
+            Console.WriteLine(obj1[2]);
+
+
             //InterfacesDemo1();
             // Non Generic Code
             MyNumberInt insInt = new MyNumberInt(100);
@@ -30,7 +56,9 @@ namespace Soti.Training.Batch2
             Console.WriteLine(insFl);
             // Generic Code
             MyNumber<int,int> mynumInt = new MyNumber<int,int>(100); // Func<int,int, float>
-           //Console.WriteLine($"{mynumInt} _ {mynumFloat} _{mynumDbl}");
+                                                                     //Console.WriteLine($"{mynumInt} _ {mynumFloat} _{mynumDbl}");
+
+            Console.ReadLine();
 
         }
 
