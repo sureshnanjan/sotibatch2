@@ -21,6 +21,30 @@ namespace Soti.Training.Batch2
         event MyIntReturningDelegate myEvent;
         static void Main(string[] args)
         {
+            Pet pet1 = new Pet("Value1",1);
+            Pet pet2 = new Pet("Value2",2);
+
+            string name = "Christy";
+            Console.WriteLine(name[0]);
+
+            Pet petAdd = pet1 + pet2;
+            Console.WriteLine($"Adding{pet1} and {pet2} gives {petAdd}");
+
+            //operators example
+            Parts ob1 = new Parts("Table", 1);
+            Parts ob2 = new Parts("Desk", 2);
+
+            Parts partAdd = ob1 + ob2;
+            Parts partSub = ob1 - ob2;
+            Parts partMul = ob1 * ob2;
+
+            Console.WriteLine($"Adding{ob1} and {ob2} gives {partAdd}");
+            Console.WriteLine($"Subtracting{ob1} and {ob2} gives {partSub}");
+            Console.WriteLine($"Multiplying{ob1} and {ob2} gives {partMul}");
+
+            Console.WriteLine(ob1[0]);
+            Console.WriteLine(ob2[0]);
+
             //InterfacesDemo1();
             // Non Generic Code
             MyNumberInt insInt = new MyNumberInt(100);
@@ -56,6 +80,7 @@ namespace Soti.Training.Batch2
                 Console.WriteLine(item);
 
             }
+           
             Console.WriteLine("Applying the Sort(key,value,Comparer)");
             Array.Sort(arrayKeys, arrayNumbers, new IntComparer());
             Console.WriteLine("The Sorted Array");

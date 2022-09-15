@@ -55,6 +55,7 @@
     <Compile Include="SubtracterTests.cs" />
     <Compile Include="IntegrationTests.cs" />
     <Compile Include="BinarySearcherTests.cs" />
+    <Compile Include="CollectionsTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

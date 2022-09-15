@@ -25,6 +25,23 @@ namespace Soti.Training.Batch2.Models
             this.Name = "DEFAULT";
         }
 
+        public Pet(string name,int id)
+        {
+            this.name = name;
+            this.id = id;
+        }
+
+        public override string ToString()
+        {
+            return $"{this.name}_{this.id}";
+        }
+
+
+        public static Pet operator +(Pet a, Pet b)
+        => new Pet($"{a.name}{b.name}", a.id + b.id);
+
+
+      
         /// <summary>
         /// 
         /// </summary>
