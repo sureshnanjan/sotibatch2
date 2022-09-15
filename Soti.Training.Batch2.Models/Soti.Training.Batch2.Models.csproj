@@ -30,6 +30,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -44,6 +48,7 @@
     <Compile Include="AccessModifiersDemo.cs" />
     <Compile Include="AnotherClass.cs" />
     <Compile Include="Category.cs" />
+    <Compile Include="Collections.cs" />
     <Compile Include="MyEnum.cs" />
     <Compile Include="Pet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
