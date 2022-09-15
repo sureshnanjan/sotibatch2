@@ -3,6 +3,7 @@ using System.IO;
 using Soti.Training.Batch2.Models;
 using Soti.Training.Batch2.Operations;
 using System.Linq;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace Soti.Training.Batch2
@@ -30,11 +31,16 @@ namespace Soti.Training.Batch2
             Console.WriteLine(insFl);
             // Generic Code
             MyNumber<int,int> mynumInt = new MyNumber<int,int>(100); // Func<int,int, float>
-           //Console.WriteLine($"{mynumInt} _ {mynumFloat} _{mynumDbl}");
-
+                                                                     //Console.WriteLine($"{mynumInt} _ {mynumFloat} _{mynumDbl}");
         }
 
-        private static void InterfacesDemo1()
+        public static void PrintValues(IEnumerable myList)
+        {
+            foreach (Object obj in myList)
+                Console.Write("   {0}", obj);
+            Console.WriteLine();
+        }
+            private static void InterfacesDemo1()
         {
             //InterfacesDemo();
             int[] arrayNumbers = { 100, 1, 10, 11, 3, 2, 0, 23, 100 };
