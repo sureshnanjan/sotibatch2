@@ -19,8 +19,26 @@ namespace Soti.Training.Batch2
         delegate Pet PetDelegate();
 
         event MyIntReturningDelegate myEvent;
+
         static void Main(string[] args)
         {
+
+            Operators op1 = new Operators("Riya", 20);
+            Operators op2 = new Operators("Ann", 30);
+            Operators op = op1 + op2;
+            Console.WriteLine($"Adding {op1} and {op2} gives {op}");
+            op = op1 - op2;
+            Console.WriteLine($"Subtracting {op1} and {op2} gives {op}");
+            op = op1 * op2;
+            Console.WriteLine($"Multiplying {op1} and {op2} gives {op}");
+
+            Console.WriteLine($"{op1[0]}");
+            Console.WriteLine($"{op1[2]}");
+            Console.WriteLine($"{op2[0]}");
+            Console.WriteLine($"{op2[1]}");
+            Console.WriteLine($"{op1[3]}");
+
+            /*
             //InterfacesDemo1();
             // Non Generic Code
             MyNumberInt insInt = new MyNumberInt(100);
@@ -29,8 +47,9 @@ namespace Soti.Training.Batch2
             MyNumberFloat insFl = new MyNumberFloat(100.0f);
             Console.WriteLine(insFl);
             // Generic Code
-            MyNumber<int,int> mynumInt = new MyNumber<int,int>(100); // Func<int,int, float>
-           //Console.WriteLine($"{mynumInt} _ {mynumFloat} _{mynumDbl}");
+            MyNumber<int, int> mynumInt = new MyNumber<int, int>(100); // Func<int,int, float>
+                                                                       //Console.WriteLine($"{mynumInt} _ {mynumFloat} _{mynumDbl}");
+            */
 
         }
 

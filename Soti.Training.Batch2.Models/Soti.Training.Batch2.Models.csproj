@@ -45,6 +45,7 @@
     <Compile Include="AnotherClass.cs" />
     <Compile Include="Category.cs" />
     <Compile Include="MyEnum.cs" />
+    <Compile Include="Operators.cs" />
     <Compile Include="Pet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
