@@ -4,6 +4,7 @@ using Soti.Training.Batch2.Models;
 using Soti.Training.Batch2.Operations;
 using System.Linq;
 using System.Collections.Generic;
+using System.Configuration;
 
 namespace Soti.Training.Batch2
 {
@@ -21,6 +22,11 @@ namespace Soti.Training.Batch2
         event MyIntReturningDelegate myEvent;
         static void Main(string[] args)
         {
+
+            //SOL operationd Demo
+
+            SQLLite.ShowConnectipnStrings();
+
             Pet pet1 = new Pet("Value1",1);
             Pet pet2 = new Pet("Value2",2);
 
