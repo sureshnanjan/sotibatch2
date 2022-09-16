@@ -10,6 +10,9 @@ namespace Soti.Training.Batch2
 {
     class FirstProgram // Pascal Case Classes
     {
+
+
+       
         List<string> myString;
         List<int> myInts; // Func , Action, 
         static int[] myNumbers = { 1, 2, 3 };
@@ -23,6 +26,14 @@ namespace Soti.Training.Batch2
         event MyIntReturningDelegate myEvent;
         static void Main(string[] args)
         {
+
+
+            SQLLiteDemo.ShowConnectionStrings();
+
+            Pet pet1 = new Pet("value1",1);
+            Pet pet2 = new Pet("value2",2);
+            Pet newpet = pet1 + pet2;
+            Console.WriteLine(newpet.name);
             //collection implemmentations
             //araylist
             Console.WriteLine("collection \n");

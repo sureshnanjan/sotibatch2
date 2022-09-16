@@ -12,7 +12,7 @@ namespace Soti.Training.Batch2.Models
     public class Pet // This Name of the Clss
     {
         int id; // Name of a Field enum struct
-        string name = "Default";
+       public string name = "Default";
         //string category_name;
         //int category_id;
         Category cat; // User Defined Type
@@ -24,6 +24,15 @@ namespace Soti.Training.Batch2.Models
         {
             this.Name = "DEFAULT";
         }
+
+        public Pet(string name,int id)
+        {
+            this.name = name;
+            this.id = id;
+
+        }
+        public static Pet operator +(Pet a, Pet b)
+          => new Pet($"{a.name}{b.name}",a.id+b.id);
 
         /// <summary>
         /// 
