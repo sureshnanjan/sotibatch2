@@ -10,8 +10,9 @@ namespace Soti.Training.Batch2.Models
     /// This is the Type for represting pets in the Petstore,
     /// adding this comment for git demo
     /// </summary>
-    public class Pet // This Name of the Clss
+    public class Pet: IDisposable// This Name of the Clss
     {
+        //string[] availableColors = { "Red", "Green", "Blue" };
         int id; // Name of a Field enum struct
         string name = "Default";
         //string category_name;
@@ -25,6 +26,26 @@ namespace Soti.Training.Batch2.Models
         public Pet()
         {
             this.Name = "DEFAULT";
+        }
+
+        public Pet(string name, int id)
+        {
+            this.name = name;
+            this.id = id;
+        }
+
+        public override string ToString()
+        {
+            return $"{this.name}_{this.id}"; 
+        }
+
+        public static Pet operator +(Pet a, Pet b)
+        => new Pet($"{a.name}{b.name}",a.id + b.id);
+
+        public char this[int i]
+        {
+            get { return this.name[i]; }
+            //set { arr[i] = value; }
         }
 
         /// <summary>
@@ -58,5 +79,9 @@ namespace Soti.Training.Batch2.Models
             }
         }
 
+        public void Dispose()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
