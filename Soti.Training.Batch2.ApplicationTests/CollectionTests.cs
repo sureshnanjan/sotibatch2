@@ -186,9 +186,9 @@ namespace Soti.Training.Batch2.ApplicationTests
 
             GenericQueue<string> queue = new GenericQueue<string>();
             queue.GenericQueueCreation();
-            queue.GenericQueueUpdation("anjana");
+            queue.GenericQueueUpdation("sandra");
             Queue<string> result = new Queue<string> ();
-            result.Enqueue("anjana");
+            result.Enqueue("sandra");
             Assert.ReferenceEquals(result, queue);
 
         }
@@ -198,7 +198,7 @@ namespace Soti.Training.Batch2.ApplicationTests
         {
             GenericQueue<string> queue = new GenericQueue<string>();
             queue.GenericQueueCreation();
-            queue.GenericQueueUpdation("anjana");
+            queue.GenericQueueUpdation("sandra");
             queue.GenericQueuetDeletion();
             Queue<string> result = new Queue<string>();
             
