@@ -17,10 +17,12 @@ namespace Soti.Training.Batch2.Models
         //int category_id;
         Category cat; // User Defined Type
         long mylong;
+        public int den;
+        public int num;
 
         public string Name { get; set; }
 
-        public Pet()
+        public Pet(int v, int v1)
         {
             this.Name = "DEFAULT";
         }

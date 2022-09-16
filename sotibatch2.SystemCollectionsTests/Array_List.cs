@@ -24,6 +24,8 @@ namespace Soti.Training.Batch2.ApplicationTests
             for (int i = 0; i < arlist1.Count; i++)
                 Console.WriteLine(arlist1[i]);
 
+
+
         }
     }
 }

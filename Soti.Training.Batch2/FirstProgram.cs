@@ -20,7 +20,7 @@ namespace Soti.Training.Batch2
 
         event MyIntReturningDelegate myEvent;
         static void Main(string[] args)
-        {
+        {   /*
             //InterfacesDemo1();
             // Non Generic Code
             MyNumberInt insInt = new MyNumberInt(100);
@@ -31,6 +31,8 @@ namespace Soti.Training.Batch2
             // Generic Code
             MyNumber<int,int> mynumInt = new MyNumber<int,int>(100); // Func<int,int, float>
            //Console.WriteLine($"{mynumInt} _ {mynumFloat} _{mynumDbl}");
+           */
+
 
         }
 

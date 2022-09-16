@@ -56,10 +56,17 @@
     <Compile Include="QueueGeneric.cs" />
     <Compile Include="StackCollections.cs" />
     <Compile Include="QueueCollections.cs" />
+    <Compile Include="CollectionTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="collection\System Collections.docx" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\sotibatch2.Collections\sotibatch2.Collections.csproj">
+      <Project>{12828dbb-42ee-49fd-83ac-90b0dd775cd0}</Project>
+      <Name>sotibatch2.Collections</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
