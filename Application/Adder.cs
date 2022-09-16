@@ -5,9 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Soti.Training.Batch2.Application
-{
+{    ///Adder Operation
     /// <summary>
     /// This is a class for Adding Entries
+    /// Adder
     /// </summary>
     public class Adder
     {
@@ -20,7 +21,7 @@ namespace Soti.Training.Batch2.Application
         }
 
         /// <summary>
-        /// 
+        /// Added sum of first and sec
         /// </summary>
         /// <returns> The added sum of first and second</returns>
 

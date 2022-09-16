@@ -66,3 +66,6 @@ namespace Soti.Training.Batch2.Operations
         // Enumerators 
     }
 }
+
+
+//This is just a change made by noel
