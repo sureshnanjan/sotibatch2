@@ -21,6 +21,83 @@ namespace Soti.Training.Batch2
         event MyIntReturningDelegate myEvent;
         static void Main(string[] args)
         {
+            //SQLOperationsDemo();
+            SQLLiteDemo.ShowConnectionStrings();
+
+            Console.WriteLine("This is Running as User: {}" );
+
+        }
+
+        private static void SQLOperationsDemo()
+        {
+            // OperatorOverload();
+            //SQLLiteDemo.ShowDemo();
+            using (var conn = SQLLiteDemo.getConnection())
+            {
+                Console.WriteLine(conn.ConnectionString);
+                conn.Open();
+                MySql.Data.MySqlClient.MySqlCommand command = conn.CreateCommand();
+                command.CommandText = "select Population from city where id=62";
+                string result = command.ExecuteScalar().ToString();
+                Console.WriteLine($"The Population retrieved for 62 is {result}");
+
+                command.CommandText = @"select * from city where Population > 10000";
+                var results = command.ExecuteReader();
+                while (results.Read())
+                {
+                    var reader = results.GetTextReader(1);
+                    var record = reader.ReadLine();
+                    Console.WriteLine(record);
+                    reader.Close();
+                    results.Close();
+                    break;
+                }
+                /*
+                 CREATE TABLE Persons (
+                    Personid int NOT NULL AUTO_INCREMENT,
+                    LastName varchar(255) NOT NULL,
+                    FirstName varchar(255),
+                    Age int,
+                    PRIMARY KEY (Personid)
+                    );
+                 */
+                command.CommandText =
+                @"
+                    INSERT INTO Persons(FirstName,LastName,Age)
+                    VALUES ('Suresh', 'Nanjan',45),
+                    ('Narendra', 'Modi',70),
+                    ('Rahul', 'Gandhi',55),
+                    ('Amit', 'Shah',65)";
+                command.ExecuteNonQuery();
+
+            }
+        }
+
+        private static void OperatorOverloading()
+        {
+            Pet pet1 = new Pet();
+            Pet pet2 = new Pet();
+
+            string name = "Suresh";
+            Console.WriteLine(name[0]);
+
+
+
+            Pet petAdded = pet1 + pet2;
+            Console.WriteLine($"Adding {pet1} and {pet2} gives me {petAdded}");
+            Console.WriteLine(pet1[2]);
+            Console.WriteLine(pet2[1]);
+            Console.WriteLine(petAdded[0]);
+
+            pet1 = new Pet("Value1", 1);
+            pet2 = new Pet("Value2", 2);
+            petAdded = pet1 + pet2;
+            Console.WriteLine($"Adding {pet1} and {pet2} gives me {petAdded}");
+            //GenericsDEmo();
+        }
+
+        private static void GenericsDEmo()
+        {
             //InterfacesDemo1();
             // Non Generic Code
             MyNumberInt insInt = new MyNumberInt(100);
@@ -29,9 +106,8 @@ namespace Soti.Training.Batch2
             MyNumberFloat insFl = new MyNumberFloat(100.0f);
             Console.WriteLine(insFl);
             // Generic Code
-            MyNumber<int,int> mynumInt = new MyNumber<int,int>(100); // Func<int,int, float>
-           //Console.WriteLine($"{mynumInt} _ {mynumFloat} _{mynumDbl}");
-
+            MyNumber<int, int> mynumInt = new MyNumber<int, int>(100); // Func<int,int, float>
+                                                                       //Console.WriteLine($"{mynumInt} _ {mynumFloat} _{mynumDbl}");
         }
 
         private static void InterfacesDemo1()
@@ -86,8 +162,6 @@ namespace Soti.Training.Batch2
             }
         }
 
-
-
         private static void MyMethod() { Console.WriteLine("Inside Void and No params Method");
             Pet myPet = new Pet();
             int num = 10;
@@ -102,7 +176,6 @@ namespace Soti.Training.Batch2
         private static Pet DoSomeThingforPet() { return new Pet(); }
 
 
-
         /// <summary>
         /// Sorts a range of elements in a pair of one-dimensional Array objects (one contains the keys and the o
         /// ther contains the corresponding items) based on the keys in the first Array using the specified IComparer.
@@ -114,11 +187,6 @@ namespace Soti.Training.Batch2
         /// Sorts the elements in a range of elements in a one-dimensional Array using the specified IComparer.
         /// </summary>
         void SortOverload2Demo() { }
-
-
-
-
-
 
         readonly int notchaningattribute = 100;
 
@@ -193,8 +261,6 @@ namespace Soti.Training.Batch2
         }
 
         private static void SecondMethod() { Console.WriteLine("This is another Method"); }
-
-
         private static void InvokeMethods(MyDelegate first, MyDelegate Second, MyIntReturningDelegate third) {
 
             first();
