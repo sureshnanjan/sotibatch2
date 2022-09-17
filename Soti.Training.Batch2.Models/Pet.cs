@@ -13,10 +13,16 @@ namespace Soti.Training.Batch2.Models
     {
         int id; // Name of a Field enum struct
         string name = "Default";
+        
         //string category_name;
         //int category_id;
         Category cat; // User Defined Type
+        /// <summary>
+        /// 
+        /// </summary>
         long mylong;
+        
+
 
         public string Name { get; set; }
 
@@ -24,6 +30,10 @@ namespace Soti.Training.Batch2.Models
         {
             this.Name = "DEFAULT";
         }
+
+        
+
+
 
         /// <summary>
         /// 
@@ -52,7 +62,7 @@ namespace Soti.Training.Batch2.Models
         {
             if (true)
             {
-                throw new ArgumentException("This is not a valid argumen");
+                throw new ArgumentException("This is not a valid argument");
             }
         }
 
